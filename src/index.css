@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: Inter,'Arial Narrow Bold', sans-serif;
+    color: #2B283A;
+}
+
+nav {
+    height: 55px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F55A5A;
+}
+
+nav h1 {
+    line-height: 17px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+nav img {
+    margin-right: 7px;
+    width: 24px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 35px 40px 0;
+    width: 550px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    border-bottom: 1px solid #F5F5F5;  
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.location p {
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    margin-right: 12px;
+}
+
+.loc-icon {
+    width: 7px;
+    margin-right: 4px;
+}
+
+.card-img {
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+}
+
+.card a {
+    font-size: 10px;
+    color: #918E9B;
+}
+
+.card h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+span {
+    display: block;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 7px;
+}
+
+.card:last-child {
+    border: none;
 }
